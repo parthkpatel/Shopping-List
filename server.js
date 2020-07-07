@@ -20,10 +20,10 @@ mongoose
   .connect(db, {
     useNewUrlParser: true,
     useCreateIndex: true,
-    useUnifiedTopology: true
+    useUnifiedTopology: true,
   })
   .then(() => console.log("MongoDB Connected..."))
-  .catch(err => console.log("TESTPARTH" + err));
+  .catch((err) => console.log(err));
 
 // Use Routes
 app.use("/api/items", items);
